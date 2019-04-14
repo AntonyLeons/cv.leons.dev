@@ -7,13 +7,14 @@
   <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <script src="main.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Gudea|Lato|Rokkitt" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  <script src="lazysizes.min.js" async></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
   <title>Antony's CV</title>
+  <meta name="Description" content="A digital version of Antony Leons' résumé with past experience and academic achievement">
 </head>
 <body>
 
@@ -21,7 +22,7 @@
   <div id="drag" class="cv instaFade wrap">
     <div class="mainDetails">
       <div id="headshot" class="">
-        <img src="Portrait.jpg" title="Hi, I'm Antony!" alt="Antony Leons" />
+        <img data-src="Portrait.jpg" title="Hi, I'm Antony!" alt="Antony Leons" class="lazyload" />
       </div>
 
       <div id="name">
@@ -91,7 +92,7 @@
                 <ul>
                     <li>Element of AI</li>
                     <li>The Fundamentals of Digital Marketing</li>
-                  </ul>  
+                  </ul>
             </p>
           </article>
 
@@ -99,7 +100,7 @@
               <h2>Raspberry Pi</h2>
              <h3>Personal Project</h3>
              <p class="subDetails">April 2012 - Febuary 2018</p>
-             <p>Used a raspberry pi for multiple projects including using it a NAS, cloud print server, 
+             <p>Used a raspberry pi for multiple projects including using it a NAS, cloud print server,
                media center and even booted a fork of android.</p>
            </article>
 
@@ -143,7 +144,7 @@
             <p class="subDetails">University of Hull</p>
             <p>Relevant Modules: Computer systems, Programming 1, Quantitive methods in computing
                 Systems Analysis, Design and Process, Electronics and Interfacing,  Information Systems and Web Technologies,
-                 Database Techniques, Agile Software Development. 
+                 Database Techniques, Agile Software Development.
             </p>
           </article>
 
