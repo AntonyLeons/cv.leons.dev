@@ -1,21 +1,14 @@
 <!DOCTYPE HTML>
 <html lang="en"><head>
 <meta charset="UTF-8">
-<title>{{ .Site.Title }}</title>
+<title>404 not found</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="{{ with .Site.Params.description }}{{ . }}{{ end }}">
-<meta name="author" content="{{ with .Site.Params.name }}{{ . }}{{ end }}">
+<meta name="description" content="404 not found">
+<meta name="author" content="leons.dev">
 <link rel="canonical" href="https://leons.dev/" />
-{{ if .Site.Params.favicon_ico }}
-  <link rel="icon" href="{{ .Site.Params.favicon_ico | printf "/images/icons/%s" | relURL  }}" type="image/x-icon" {{ if .Site.Params.favicon_ico_sizes }}sizes="{{ .Site.Params.favicon_ico_sizes  }}"{{ end }} />
-{{ end }}
-{{ if .Site.Params.favicon_png }}
-  <link rel="icon" href="{{ .Site.Params.favicon_png | printf "/images/icons/%s" | relURL  }}" type="image/png" {{ if .Site.Params.favicon_png_sizes }}sizes="{{ .Site.Params.favicon_png_sizes  }}"{{ end }} />
-{{ end }}
-{{ if .Site.Params.favicon_svg }}
-  <link rel="icon" href="{{ .Site.Params.favicon_svg | printf "/images/icons/%s" | relURL  }}" type="image/svg+xml" sizes="any" />
-{{ end }}
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <style>
